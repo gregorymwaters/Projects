@@ -1,0 +1,12 @@
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\Data.csproj.AssemblyReference.cache
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache
+H:\Users\Greg\Source\Repos\CIS_400\Data\bin\Debug\net5.0\GyroScope.Data.deps.json
+H:\Users\Greg\Source\Repos\CIS_400\Data\bin\Debug\net5.0\GyroScope.Data.dll
+H:\Users\Greg\Source\Repos\CIS_400\Data\bin\Debug\net5.0\ref\GyroScope.Data.dll
+H:\Users\Greg\Source\Repos\CIS_400\Data\bin\Debug\net5.0\GyroScope.Data.pdb
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\GyroScope.Data.dll
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\ref\GyroScope.Data.dll
+H:\Users\Greg\Source\Repos\CIS_400\Data\obj\Debug\net5.0\GyroScope.Data.pdb
