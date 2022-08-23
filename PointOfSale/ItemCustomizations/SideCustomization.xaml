@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="PointOfSale.ItemCustomizations.SideCustomization"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PointOfSale.ItemCustomizations"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<UserControl.Resources>
+		<Style TargetType="ListBox">
+			<Setter Property="Background" Value="#FF424242"/>
+		</Style>
+		<Style TargetType="RadioButton">
+			<Setter Property="Foreground" Value="#FFC8C8C8"/>
+			<Setter Property="FontSize" Value="20"/>
+		</Style>
+	</UserControl.Resources>
+	
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<ListBox>
+			<RadioButton GroupName="SideSizeCustom" Margin="10,10" Name="SmallSideRadio">Small</RadioButton>
+			<RadioButton GroupName="SideSizeCustom" Margin="10,10" Name="MediumSideRadio">Medium</RadioButton>
+			<RadioButton GroupName="SideSizeCustom" Margin="10,10" Name="LargeSideRadio">Large</RadioButton>
+		</ListBox>
+		<Button Grid.Column="3" Name="AddItemButton" Click="FinishItem">Finish Item</Button>
+	</Grid>
+</UserControl>

@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="PointOfSale.MenuItemSelectionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PointOfSale"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	
+	<!--Style declarations-->
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<Style TargetType="Button" >
+				<!--Style Triggers to Change the Look Of Each Column-->
+				<Style.Triggers>
+					<Trigger Property="Grid.Column" Value="0">
+						<Setter Property="Background" Value="#FFAA543B"/>
+					</Trigger>
+					<Trigger Property="Grid.Column" Value="2">
+						<Setter Property="Background" Value="#FF3B91AA"/>
+					</Trigger>
+					<Trigger Property="Grid.Column" Value="4">
+						<Setter Property="Background" Value="#FF84CB53"/>
+					</Trigger>
+					<Trigger Property="Grid.Column" Value="6">
+						<Setter Property="Background" Value="#FF4A31BB"/>
+					</Trigger>
+				</Style.Triggers>
+				<!--Generic Style that applies to all buttons-->
+				<Setter Property="Margin" Value="10"/>
+				<Setter Property="FontSize" Value="15"/>
+				<Setter Property="Foreground" Value="#FFECECEC"/>
+				<Setter Property="BorderThickness" Value="0"/>
+			</Style>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+
+	<Grid>
+		<!--Grid is manually spaced to avoid misclicking-->
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="1*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		
+		<!--Entree Button Set-->
+		<Button Name="LeoButton" Grid.Row="0" Grid.Column="0" Click="LeoButton_Click">Leo Lamb Gyro</Button>
+		<Button Name="ScorpioButton" Grid.Row="1" Grid.Column="0" Click="ScorpioButton_Click">Scorpio Spicy Gyro</Button>
+		<Button Name="VirgoButton" Grid.Row="2" Grid.Column="0" Click="VirgoButton_Click">Virgo Classic Gyro</Button>
+		<Button Name="PicesButton" Grid.Row="3" Grid.Column="0" Click="PicesButton_Click">Pices Fish Dish</Button>
+		
+		
+		<!--Sides Button Set-->
+		<Button Name="AriesButton" Grid.Row="0" Grid.Column="2" Click="AriesButton_Click">Aeris Fries</Button>
+		<Button Name="GeminiButton" Grid.Row="1" Grid.Column="2" Click="GeminiButton_Click">Gemini Stuffed Grape Leaves</Button>
+		<Button Name="SagitButton" Grid.Row="2" Grid.Column="2" Click="SagitButton_Click">Sagittarius Greek Salad</Button>
+		<Button Name="TarusButton" Grid.Row="3" Grid.Column="2" Click="TarusButton_Click">Taurus Tabuleh</Button>
+		
+		<!--Treats Button Set-->
+		<Button Name="AquariusButton" Grid.Row="0" Grid.Column="4" Click="AquariusButton_Click">Aquarius Ice</Button>
+		<Button Name="CancerButton" Grid.Row="1" Grid.Column="4" Click="CancerButton_Click">Cancer Halva Cake</Button>
+		
+		<!--Drinks Button Set-->
+		<Button Name="CapricornButton" Grid.Row="0" Grid.Column="6" Click="CapricornButton_Click">Capricorn Mountain Tea</Button>
+		<Button Name="LibraButton" Grid.Row="1" Grid.Column="6" Click="LibraButton_Click">Libra Libation</Button>
+
+	</Grid>
+</UserControl>

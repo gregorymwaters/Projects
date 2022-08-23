@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="PointOfSale.PaymentOptions"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PointOfSale"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<UserControl.Resources>
+		<Style TargetType="Button">
+			<Setter Property="Margin" Value="10"/>
+			<Setter Property="Foreground" Value="#FFECECEC"/>
+			<Setter Property="Background" Value="#FF424242"/>
+			<Setter Property="FontSize" Value="20"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+	</UserControl.Resources>
+	
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Button Name="CreditDebit" Grid.Column="0" Margin="20" FontSize="50" Click="CreditDebit_Click">Credit/Debit</Button>
+		<Button Name="Cash" Grid.Column="1" Margin="20" FontSize="50" Click="Cash_Click">Cash</Button>
+    </Grid>
+</UserControl>
